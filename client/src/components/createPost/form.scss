@@ -1,0 +1,64 @@
+@import "../../style.scss";
+
+.formpage {
+    @include themify($themes) {
+    background-color: themed("bgSoft");
+    color: themed("textColor");
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+            
+
+        .paper {
+            padding: 20px;
+            max-height: 600px;
+            max-width: 400px;
+            background-color: themed("bg");
+            color: themed("textColor"); 
+
+            .input{
+                color: themed("textColor");
+                background-color: themed("bgSoft");
+                height: 50px;
+                width: 100%;
+                border: 1px solid lightgray;
+            }
+
+            .message{
+                color: themed("textColor");
+                background-color: themed("bgSoft");
+                height: 100px;
+                width: 100%;
+                border: 1px solid lightgray;
+
+            }
+        }
+
+        .form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            
+            .TextField {
+            color: themed("textColor"); 
+                
+            }
+                
+                .chipInput{
+                    color: themed("textColor");
+                    background-color: themed("bgSoft");
+                    // border: 1px solid lightgray;
+                    // border: none;
+                }
+
+        }
+        .buttonSubmit{
+            margin-bottom: 10px;
+        }
+
+
+
+}
+}
